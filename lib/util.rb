@@ -1,7 +1,7 @@
 module Util
   
   def self.compare_2_arrays_of_floats(a, b)
-    delete_nans_and_truncate_floats_to_strings(a) == delete_nans_and_truncate_floats_to_strings(b)
+    a.length == b.length && delete_nans_and_truncate_floats_to_strings(a) == delete_nans_and_truncate_floats_to_strings(b)
   end
 
   def self.truncate_float_to_string(f)
@@ -18,6 +18,6 @@ module Util
       o << [opens[i], highs[i], lows[i], closes[i]]
     end
     o
-  end  
+  end
   
 end

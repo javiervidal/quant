@@ -10,4 +10,4 @@ class TestSma < MiniTest::Unit::TestCase
     assert Util.compare_2_arrays_of_floats Quant.sma(Samples::Ohlc.usdjpy_150_closes, 25), Samples::Ttr.usdjpy_150_ttr_sma25
   end
 
-  end
+end
