@@ -38,7 +38,6 @@ module Quant
       else
         high       = e[1]
         low        = e[2]
-        close      = e[3]
         last_close = ohlc[i - 1][3]
         [ high - low, (high - last_close).abs, (last_close - low).abs ].max
       end
